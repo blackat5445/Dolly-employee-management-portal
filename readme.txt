@@ -3,7 +3,7 @@ Contributors: blackat5445
 Requires at least: 6.2
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.3.1
+Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,7 @@ With the free Dolly Employee Management plugin, the sign-in pages, the employee 
 
 Without the plugin the theme works as a simple blog and pages theme: posts, pages, archives, search, comments and a primary menu. A dismissible notice in the dashboard recommends the plugin.
 
-Features: one column, custom menu, featured images, threaded comments, wide blocks, translation ready (Italian included), skip link and visible focus styles.
+Features: one column, custom logo (the Dolly logo by default), custom menu, featured images, threaded comments, wide blocks, translation ready (Italian included), skip link and visible focus styles.
 
 == Installation ==
 
@@ -36,6 +36,10 @@ No. The theme works on its own as a blog and pages theme. The plugin adds the em
 No. The theme does not change search-engine settings. The Dolly Employee Management plugin keeps its portal pages out of search engines and, with this theme active, the whole portal site (filter `dolly_noindex_site`).
 
 == Changelog ==
+
+= 1.4.0 =
+* New Dolly logo: default logo in the header (replace it in Appearance › Customize › Site Identity), custom logo support.
+* New screenshot.
 
 = 1.3.1 =
 * License changed to GPLv2 or later.
@@ -60,4 +64,5 @@ Dolly Portal is distributed under the terms of the GNU General Public License v2
 
 The theme bundles no third-party fonts, images or scripts.
 
-screenshot.png: a screenshot of the theme with the Dolly Employee Management plugin, made by the author, (C) 2026 Kasra Falahati, GPLv2 or later.
+assets/images/dolly-logo.svg: the Dolly logo, made by the author, (C) 2026 Kasra Falahati, GPLv2 or later.
+screenshot.png: screenshots of the theme with the Dolly Employee Management plugin and the Dolly logo, made by the author, (C) 2026 Kasra Falahati, GPLv2 or later.

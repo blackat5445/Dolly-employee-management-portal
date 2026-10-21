@@ -20,6 +20,8 @@ defined( 'ABSPATH' ) || exit;
 <header class="dp-header">
 	<div class="dp-wrap dp-header__inner">
 		<div class="dp-branding">
+			<?php dolly_portal_logo(); ?>
+			<div class="dp-branding__text">
 			<?php if ( is_front_page() && is_home() ) : ?>
 				<h1 class="dp-site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
@@ -28,6 +30,7 @@ defined( 'ABSPATH' ) || exit;
 			<?php if ( get_bloginfo( 'description' ) ) : ?>
 				<p class="dp-site-description"><?php bloginfo( 'description' ); ?></p>
 			<?php endif; ?>
+			</div>
 		</div>
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 			<nav class="dp-nav" aria-label="<?php esc_attr_e( 'Primary menu', 'dolly-portal' ); ?>">
