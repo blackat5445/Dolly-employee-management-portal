@@ -1,0 +1,65 @@
+/*
+Theme Name: Dolly Portal
+Theme URI: https://github.com/blackat5445/Dolly-employee-management-portal
+Author: Kasra Falahati
+Author URI: https://github.com/blackat5445
+Description: Tema del portale dipendenti: layout del portale dipendente, pagine di accesso e schermo QR/PIN della sede. Tutte le funzionalità risiedono nel plugin "Dolly Employee Management".
+Version: 1.0.0
+Requires at least: 6.2
+Requires PHP: 7.4
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+Text Domain: dolly-portal
+*/
+
+:root {
+	--dolly-navy: #002F4D;
+	--dolly-gold: #CCB166;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+
+body.dolly-portal {
+	margin: 0;
+	background: #F5F6F8;
+	color: #1B2530;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+body.dolly-portal.mem-view-sede { background: var(--dolly-navy); }
+
+.mp-skip-link {
+	position: absolute;
+	left: 8px;
+	top: -60px;
+	z-index: 100002;
+	padding: 12px 16px;
+	background: var(--dolly-gold);
+	color: var(--dolly-navy);
+	font-weight: 700;
+	border-radius: 8px;
+	text-decoration: none;
+}
+.mp-skip-link:focus { top: 8px; outline: 3px solid var(--dolly-navy); outline-offset: 2px; }
+
+/* Generic pages (outside the application views). */
+.mp-page { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+.mp-page__card {
+	background: #fff;
+	border: 1px solid #E1E5EA;
+	border-top: 4px solid var(--dolly-gold);
+	border-radius: 12px;
+	padding: 24px;
+	box-shadow: 0 1px 2px rgba(0, 31, 51, .06), 0 4px 16px rgba(0, 31, 51, .06);
+}
+.mp-page h1 { color: var(--dolly-navy); margin-top: 0; }
+.mp-page a { color: var(--dolly-navy); font-weight: 600; }
+.mp-wordmark { font-weight: 800; font-size: 1.375rem; color: var(--dolly-navy); letter-spacing: .02em; }
+.mp-wordmark::after { content: ""; display: inline-block; width: 8px; height: 8px; margin-left: 4px; background: var(--dolly-gold); border-radius: 2px; }
+.mp-button {
+	display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 16px;
+	background: var(--dolly-navy); color: #fff !important; border-radius: 8px; text-decoration: none; font-weight: 600;
+}
+.mp-button:focus-visible { outline: 3px solid var(--dolly-navy); outline-offset: 2px; box-shadow: 0 0 0 5px rgba(204, 177, 102, .55); }
