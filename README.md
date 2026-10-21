@@ -66,4 +66,4 @@ The plugin adds the `dolly-body` and `dolly-view-{view}` body classes and the `n
 
 ## License
 
-[MIT](LICENSE) © Kasra Falahati
+[GPL-2.0-or-later](LICENSE) © 2026 [Kasra Falahati](https://kasra.eu)

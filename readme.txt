@@ -3,9 +3,9 @@ Contributors: blackat5445
 Requires at least: 6.2
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.3.0
-License: MIT
-License URI: https://opensource.org/licenses/MIT
+Stable tag: 1.3.1
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 A clean one-column theme for a site dedicated to an employee portal, made for the Dolly Employee Management plugin.
 
@@ -37,6 +37,9 @@ No. The theme does not change search-engine settings. The Dolly Employee Managem
 
 == Changelog ==
 
+= 1.3.1 =
+* License changed to GPLv2 or later.
+
 = 1.3.0 =
 * Works as a standard theme without the plugin: posts, pages, archives, search, comments, menu.
 * Dismissible plugin notice; search-engine rules moved to the plugin.
@@ -50,11 +53,11 @@ No. The theme does not change search-engine settings. The Dolly Employee Managem
 
 == Copyright ==
 
-Dolly Portal WordPress Theme, (C) 2026 Kasra Falahati.
-Dolly Portal is distributed under the terms of the MIT License (https://opensource.org/licenses/MIT), compatible with the GNU GPL.
+Dolly Portal WordPress Theme, (C) 2026 Kasra Falahati (https://kasra.eu).
+Dolly Portal is distributed under the terms of the GNU General Public License v2 or later (https://www.gnu.org/licenses/gpl-2.0.html).
 
 == Resources ==
 
 The theme bundles no third-party fonts, images or scripts.
 
-screenshot.png: a screenshot of the theme with the Dolly Employee Management plugin, made by the author, (C) 2026 Kasra Falahati, MIT License.
+screenshot.png: a screenshot of the theme with the Dolly Employee Management plugin, made by the author, (C) 2026 Kasra Falahati, GPLv2 or later.
