@@ -10,8 +10,24 @@ msgstr ""
 "X-Domain: dolly-portal\n"
 "X-Source-Language: en_US\n"
 
-#: functions.php
-msgid "Dolly Portal:"
+#: comments.php
+msgid "Comments are closed."
+msgstr ""
+
+#. translators: %s: number of comments.
+#: comments.php
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: year, 2: site name.
+#: footer.php
+msgid "© %1$s %2$s"
+msgstr ""
+
+#: functions.php header.php
+msgid "Primary menu"
 msgstr ""
 
 #. translators: %s: required plugin version.
@@ -20,11 +36,69 @@ msgid "this theme needs a newer version of the Dolly Employee Management plugin.
 msgstr ""
 
 #: functions.php
-msgid "install and activate the latest version of the Dolly Employee Management plugin. The theme is only the layout of the portal: sign-in, employee portal and workplace display come from the plugin."
+msgid "install and activate the latest version of the Dolly Employee Management plugin to turn this site into an employee portal (sign-in, employee portal and workplace display)."
 msgstr ""
 
-#: template-parts/plugin-missing.php
+#: functions.php
+msgid "Dolly Portal:"
+msgstr ""
+
+#: header.php template-parts/plugin-missing.php
 msgid "Skip to content"
+msgstr ""
+
+#. translators: %s: search terms.
+#: index.php
+msgid "Search results for: %s"
+msgstr ""
+
+#. translators: %s: author name.
+#: index.php
+msgid "by %s"
+msgstr ""
+
+#: index.php
+msgid "Featured"
+msgstr ""
+
+#: index.php
+msgid "Page"
+msgstr ""
+
+#: index.php
+msgid "Pages:"
+msgstr ""
+
+#: index.php
+msgid "Categories:"
+msgstr ""
+
+#: index.php
+msgid "Tags:"
+msgstr ""
+
+#: index.php
+msgid "Previous"
+msgstr ""
+
+#: index.php
+msgid "Next"
+msgstr ""
+
+#: index.php
+msgid "Page not found"
+msgstr ""
+
+#: index.php
+msgid "Nothing found"
+msgstr ""
+
+#: index.php
+msgid "No results match your search. Try different words."
+msgstr ""
+
+#: index.php
+msgid "The page you are looking for is not available. Try a search."
 msgstr ""
 
 #: template-parts/plugin-missing.php
@@ -40,7 +114,7 @@ msgid "Administrator:"
 msgstr ""
 
 #: style.css
-msgid "Base theme for an employee portal site built on the Dolly Employee Management plugin. The theme only provides the page layout; content, design, colors, logo, languages and all features come from the plugin."
+msgid "A clean one-column theme for a site dedicated to an employee portal. With the Dolly Employee Management plugin it shows the sign-in pages, the employee portal and the workplace display with the plugin's design, colors, logo and languages. Without the plugin it works as a simple, accessible blog and pages theme."
 msgstr ""
 
 #: style.css
