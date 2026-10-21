@@ -12,7 +12,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'DOLLY_PORTAL_VERSION', '1.3.0' );
+define( 'DOLLY_PORTAL_VERSION', '1.3.1' );
 
 /** Oldest version of the Dolly Employee Management plugin this theme is made for. */
 define( 'DOLLY_PORTAL_PLUGIN_VERSION', '1.13.0' );
