@@ -34,3 +34,15 @@ msgstr "Il portale è in manutenzione. Riprova più tardi o contatta l'amministr
 #: template-parts/plugin-missing.php
 msgid "Activate the Dolly Employee Management plugin"
 msgstr "Attiva il plugin Dolly Employee Management"
+
+#: style.css
+msgid "Base theme for an employee portal site built on the Dolly Employee Management plugin. The theme only provides the page layout; content, design, colors, logo, languages and all features come from the plugin."
+msgstr "Tema di base per un sito di portale dipendenti basato sul plugin Dolly Employee Management. Il tema fornisce solo l'impaginazione; contenuti, aspetto, colori, logo, lingue e tutte le funzionalità sono del plugin."
+
+#: style.css
+msgid "Dolly Portal"
+msgstr "Dolly Portal"
+
+#: style.css
+msgid "Kasra Falahati"
+msgstr "Kasra Falahati"
