@@ -12,7 +12,10 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'DOLLY_PORTAL_VERSION', '1.1.0' );
+define( 'DOLLY_PORTAL_VERSION', '1.2.0' );
+
+/** Oldest version of the Dolly Employee Management plugin this theme is made for. */
+define( 'DOLLY_PORTAL_PLUGIN_VERSION', '1.12.0' );
 
 add_action(
 	'after_setup_theme',
@@ -24,9 +27,28 @@ add_action(
 	}
 );
 
-/** True when the application plugin is active. */
+/** True when the application plugin is active (and recent enough to render the portal). */
 function dolly_portal_plugin_active() {
-	return class_exists( 'Dolly_Frontend' );
+	return class_exists( 'Dolly_Frontend' ) && method_exists( 'Dolly_Frontend', 'render_view' );
+}
+
+/**
+ * State of the application plugin: '' when the plugin is active and up to date, 'missing' when it is not
+ * installed or not active, 'outdated' when it is older than DOLLY_PORTAL_PLUGIN_VERSION.
+ */
+function dolly_portal_plugin_status() {
+	if ( ! dolly_portal_plugin_active() ) {
+		return 'missing';
+	}
+	return defined( 'DOLLY_VERSION' ) && version_compare( DOLLY_VERSION, DOLLY_PORTAL_PLUGIN_VERSION, '<' ) ? 'outdated' : '';
+}
+
+/** Message asking to install the latest version of the plugin (no links until it is published in the WordPress directory). */
+function dolly_portal_plugin_message( $status ) {
+	return 'outdated' === $status
+		/* translators: %s: required plugin version. */
+		? sprintf( __( 'this theme needs a newer version of the Dolly Employee Management plugin. Install the latest version (%s or later).', 'dolly-portal' ), DOLLY_PORTAL_PLUGIN_VERSION )
+		: __( 'install and activate the latest version of the Dolly Employee Management plugin. The theme is only the layout of the portal: sign-in, employee portal and workplace display come from the plugin.', 'dolly-portal' );
 }
 
 add_action(
@@ -63,15 +85,16 @@ function dolly_portal_theme_color() {
 	return dolly_portal_plugin_active() ? Dolly_Frontend::theme_color() : '#2563EB';
 }
 
-/** Admin notice when the application plugin is missing. */
+/** Admin notice when the application plugin is missing or outdated. */
 add_action(
 	'admin_notices',
 	function () {
-		if ( ! dolly_portal_plugin_active() && current_user_can( 'activate_plugins' ) ) {
+		$status = dolly_portal_plugin_status();
+		if ( $status && current_user_can( 'install_plugins' ) ) {
 			printf(
 				'<div class="notice notice-warning"><p><strong>%1$s</strong> %2$s</p></div>',
 				esc_html__( 'Dolly Portal:', 'dolly-portal' ),
-				esc_html__( 'activate the Dolly Employee Management plugin to use the employee portal.', 'dolly-portal' )
+				esc_html( dolly_portal_plugin_message( $status ) )
 			);
 		}
 	}

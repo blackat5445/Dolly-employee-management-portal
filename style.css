@@ -4,7 +4,7 @@ Theme URI: https://github.com/blackat5445/Dolly-employee-management-portal
 Author: Kasra Falahati
 Author URI: https://github.com/blackat5445
 Description: Base theme for an employee portal site built on the Dolly Employee Management plugin. The theme only provides the page layout; content, design, colors, logo, languages and all features come from the plugin.
-Version: 1.1.0
+Version: 1.2.0
 Requires at least: 6.2
 Requires PHP: 7.4
 License: MIT
@@ -48,6 +48,7 @@ body.dolly-portal {
 }
 .dp-card h1 { margin: 0 0 8px; font-size: 1.5rem; line-height: 1.25; }
 .dp-card p { color: #475569; }
+.dp-card .dp-admin-note { margin: 16px 0 0; padding: 12px 14px; border-radius: 8px; background: #EFF6FF; color: #0F172A; }
 .dp-button {
 	display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 16px;
 	background: #2563EB; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600;

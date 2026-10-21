@@ -1,8 +1,8 @@
 # Dolly Portal theme. Source language: English.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dolly Employee Management\n"
-"Report-Msgid-Bugs-To: https://github.com/blackat5445/Dolly-employee-management/issues\n"
+"Project-Id-Version: Dolly Portal\n"
+"Report-Msgid-Bugs-To: https://github.com/blackat5445/Dolly-employee-management-portal/issues\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,8 +14,13 @@ msgstr ""
 msgid "Dolly Portal:"
 msgstr ""
 
+#. translators: %s: required plugin version.
 #: functions.php
-msgid "activate the Dolly Employee Management plugin to use the employee portal."
+msgid "this theme needs a newer version of the Dolly Employee Management plugin. Install the latest version (%s or later)."
+msgstr ""
+
+#: functions.php
+msgid "install and activate the latest version of the Dolly Employee Management plugin. The theme is only the layout of the portal: sign-in, employee portal and workplace display come from the plugin."
 msgstr ""
 
 #: template-parts/plugin-missing.php
@@ -31,7 +36,7 @@ msgid "The portal is under maintenance. Try again later or contact your administ
 msgstr ""
 
 #: template-parts/plugin-missing.php
-msgid "Activate the Dolly Employee Management plugin"
+msgid "Administrator:"
 msgstr ""
 
 #: style.css

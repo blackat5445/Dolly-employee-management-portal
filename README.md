@@ -15,18 +15,18 @@ The theme provides only the page layout. Everything else comes from the plugin, 
 - **Same design everywhere:** the theme's own pages (front page, pages) use the plugin's stylesheet and Appearance settings, through `Dolly_Frontend::enqueue_styles()`.
 - **Browser bar color:** on phones it follows the header color chosen in *Aspetto*.
 - **Private by default:** every page of the site is marked `noindex, nofollow`.
-- **Plugin check:** if the plugin is inactive, visitors see a maintenance page and administrators see a notice in wp-admin.
+- **Plugin check:** if the plugin is not installed or not active, visitors see a maintenance page, while administrators see on that page and in wp-admin a message asking to install the latest version of the plugin. If the plugin is older than the version this theme is made for (`DOLLY_PORTAL_PLUGIN_VERSION`, currently 1.12.0), wp-admin shows a message asking to update it.
 - **Accessible:** skip link, visible focus states and 44px touch targets.
 
 ## Requirements
 
 - **WordPress 6.2+** with pretty permalinks enabled.
 - **PHP 7.4+.**
-- **[Dolly Employee Management](https://github.com/blackat5445/Dolly-employee-management) 1.11+** installed and active.
+- **[Dolly Employee Management](https://github.com/blackat5445/Dolly-employee-management) 1.12+** installed and active.
 
 ## Installation
 
-1. Install and activate the **Dolly Employee Management** plugin.
+1. Install and activate the latest version of the **Dolly Employee Management** plugin, and follow its guided setup.
 2. Download or clone this repository into `wp-content/themes/dolly-portal`.
 3. Activate **Dolly Portal** under *Appearance › Themes*.
 4. Set your colors, logo and brand in *Gestione Dipendenti › Aspetto*.
