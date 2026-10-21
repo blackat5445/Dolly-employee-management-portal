@@ -13,8 +13,8 @@ defined( 'ABSPATH' ) || exit;
 	<div class="dp-card">
 		<h1><?php esc_html_e( 'Employee portal unavailable', 'dolly-portal' ); ?></h1>
 		<p><?php esc_html_e( 'The portal is under maintenance. Try again later or contact your administrator.', 'dolly-portal' ); ?></p>
-		<?php if ( current_user_can( 'activate_plugins' ) ) : ?>
-			<p><a class="dp-button" href="<?php echo esc_url( admin_url( 'plugins.php' ) ); ?>"><?php esc_html_e( 'Activate the Dolly Employee Management plugin', 'dolly-portal' ); ?></a></p>
+		<?php if ( current_user_can( 'install_plugins' ) ) : ?>
+			<p class="dp-admin-note"><strong><?php esc_html_e( 'Administrator:', 'dolly-portal' ); ?></strong> <?php echo esc_html( dolly_portal_plugin_message( 'missing' ) ); ?></p>
 		<?php endif; ?>
 	</div>
 </main>
