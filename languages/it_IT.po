@@ -1,0 +1,36 @@
+# Dolly Portal theme. Source language: English.
+msgid ""
+msgstr ""
+"Project-Id-Version: Dolly Employee Management\n"
+"Report-Msgid-Bugs-To: https://github.com/blackat5445/Dolly-employee-management/issues\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it_IT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: dolly-portal\n"
+"X-Source-Language: en_US\n"
+
+#: functions.php
+msgid "Dolly Portal:"
+msgstr "Dolly Portal:"
+
+#: functions.php
+msgid "activate the Dolly Employee Management plugin to use the employee portal."
+msgstr "attiva il plugin Dolly Employee Management per usare il portale dipendenti."
+
+#: template-parts/plugin-missing.php
+msgid "Skip to content"
+msgstr "Vai al contenuto"
+
+#: template-parts/plugin-missing.php
+msgid "Employee portal unavailable"
+msgstr "Portale dipendenti non disponibile"
+
+#: template-parts/plugin-missing.php
+msgid "The portal is under maintenance. Try again later or contact your administrator."
+msgstr "Il portale è in manutenzione. Riprova più tardi o contatta l'amministratore."
+
+#: template-parts/plugin-missing.php
+msgid "Activate the Dolly Employee Management plugin"
+msgstr "Attiva il plugin Dolly Employee Management"

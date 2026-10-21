@@ -1,6 +1,6 @@
 <?php
 /**
- * Portale del dipendente.
+ * Employee portal. Rendered by the Dolly Employee Management plugin.
  *
  * @package DollyPortal
  */

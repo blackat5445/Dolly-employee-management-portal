@@ -1,6 +1,6 @@
 <?php
 /**
- * Schermo della sede con QR, PIN e conto alla rovescia.
+ * Workplace display with QR code, PIN and countdown. Rendered by the Dolly Employee Management plugin.
  *
  * @package DollyPortal
  */

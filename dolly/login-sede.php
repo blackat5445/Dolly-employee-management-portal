@@ -1,6 +1,6 @@
 <?php
 /**
- * Pagina di accesso degli account sede.
+ * Sign-in page for workplace accounts. Rendered by the Dolly Employee Management plugin.
  *
  * @package DollyPortal
  */

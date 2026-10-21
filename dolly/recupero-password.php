@@ -1,6 +1,6 @@
 <?php
 /**
- * Recupero password.
+ * Password recovery. Rendered by the Dolly Employee Management plugin.
  *
  * @package DollyPortal
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * Pagina di accesso dei dipendenti.
+ * Sign-in page for employees. Rendered by the Dolly Employee Management plugin.
  *
  * @package DollyPortal
  */
