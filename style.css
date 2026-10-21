@@ -3,13 +3,15 @@ Theme Name: Dolly Portal
 Theme URI: https://github.com/blackat5445/Dolly-employee-management-portal
 Author: Kasra Falahati
 Author URI: https://github.com/blackat5445
-Description: Base theme for an employee portal site built on the Dolly Employee Management plugin. The theme only provides the page layout; content, design, colors, logo, languages and all features come from the plugin.
-Version: 1.2.0
+Description: A clean one-column theme for a site dedicated to an employee portal. With the Dolly Employee Management plugin it shows the sign-in pages, the employee portal and the workplace display with the plugin's design, colors, logo and languages. Without the plugin it works as a simple, accessible blog and pages theme.
+Version: 1.3.0
 Requires at least: 6.2
+Tested up to: 7.1
 Requires PHP: 7.4
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 Text Domain: dolly-portal
+Tags: one-column, custom-menu, featured-images, threaded-comments, translation-ready, wide-blocks, blog
 */
 
 /*
@@ -28,7 +30,93 @@ body.dolly-portal {
 	line-height: 1.5;
 }
 
-/* Page content (theme front page or pages), inside the plugin's card. */
+/* ---------- Standard pages: posts, pages, archives ---------- */
+a { color: var(--dolly-primary, #2563EB); }
+a:hover { color: var(--dolly-primary-hover, #1F54C8); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--dolly-focus-ring, #B3C8F8); outline-offset: 2px; }
+img, video, iframe { max-width: 100%; height: auto; }
+.dp-wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+.dp-header { background: var(--dolly-header-bg, #2563EB); color: var(--dolly-header-text, #fff); }
+.dp-header__inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding-top: 16px; padding-bottom: 16px; }
+.dp-site-title { margin: 0; font-size: 1.25rem; font-weight: 800; line-height: 1.25; }
+.dp-site-title a { color: inherit; text-decoration: none; }
+.dp-site-description { margin: 2px 0 0; font-size: .875rem; opacity: .85; }
+.dp-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.dp-nav li { position: relative; }
+.dp-nav a { color: inherit; text-decoration: none; font-weight: 600; display: inline-block; padding: 8px 0; }
+.dp-nav a:hover, .dp-nav .current-menu-item > a { text-decoration: underline; }
+.dp-nav .sub-menu { display: block; padding-left: 12px; font-size: .9375rem; }
+.dp-main { display: block; padding: 32px 0 48px; }
+.dp-main:focus { outline: none; }
+.dp-page-header { margin-bottom: 24px; }
+.dp-page-title { margin: 0; font-size: 1.75rem; line-height: 1.2; }
+.dp-entry {
+	background: var(--dolly-surface, #fff); border: 1px solid var(--dolly-border, #E2E8F0); border-radius: var(--dolly-radius, 12px);
+	padding: 24px; margin-bottom: 24px; overflow-wrap: break-word;
+}
+.dp-entry__title { margin: 0 0 8px; font-size: 1.5rem; line-height: 1.25; }
+.dp-entry__title a { color: inherit; text-decoration: none; }
+.dp-entry__title a:hover { color: var(--dolly-primary, #2563EB); }
+.dp-entry__meta { margin: 0 0 16px; color: var(--dolly-muted, #475569); font-size: .875rem; display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.dp-entry__sticky { font-weight: 700; color: var(--dolly-primary, #2563EB); }
+.dp-entry__thumbnail { margin: 0 0 16px; }
+.dp-entry__thumbnail img { border-radius: 8px; display: block; }
+.dp-entry__content > :first-child { margin-top: 0; }
+.dp-entry__content > :last-child { margin-bottom: 0; }
+.dp-entry__footer { margin-top: 16px; font-size: .875rem; color: var(--dolly-muted, #475569); }
+.dp-entry__footer p { margin: 4px 0; }
+.dp-page-links { margin-top: 16px; font-weight: 600; }
+.dp-page-links a, .dp-page-links > span { display: inline-block; padding: 2px 8px; }
+.post-navigation, .posts-navigation, .pagination, .comment-navigation { margin: 24px 0; }
+.post-navigation .nav-links, .pagination .nav-links, .comment-navigation .nav-links { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; }
+.dp-nav-label { display: block; font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--dolly-muted, #475569); }
+.pagination .page-numbers { display: inline-block; min-width: 44px; min-height: 44px; line-height: 44px; text-align: center; border-radius: 8px; }
+.pagination .page-numbers.current { background: var(--dolly-primary, #2563EB); color: #fff; }
+.dp-empty .search-form { margin-top: 16px; }
+.search-form { display: flex; gap: 8px; }
+.search-form label { flex: 1; }
+.search-field, .comment-form input[type="text"], .comment-form input[type="email"], .comment-form input[type="url"], .comment-form textarea {
+	width: 100%; box-sizing: border-box; min-height: 44px; padding: 8px 12px; border: 1px solid var(--dolly-border-strong, #94A3B8); border-radius: 8px; font: inherit; background: var(--dolly-surface, #fff); color: inherit;
+}
+.search-submit, .comment-form .submit, .wp-block-button__link {
+	min-height: 44px; padding: 0 16px; border: 0; border-radius: 8px; background: var(--dolly-primary, #2563EB); color: #fff; font: inherit; font-weight: 600; cursor: pointer;
+}
+.dp-comments { margin-top: 24px; }
+.dp-comment-list { padding-left: 0; list-style: none; }
+.dp-comment-list .children { list-style: none; padding-left: 24px; }
+.dp-comment-list .comment-body { padding: 16px 0; border-bottom: 1px solid var(--dolly-border, #E2E8F0); }
+.dp-comment-list .avatar { border-radius: 50%; vertical-align: middle; margin-right: 8px; }
+.comment-meta { font-size: .875rem; color: var(--dolly-muted, #475569); }
+.dp-footer { border-top: 1px solid var(--dolly-border, #E2E8F0); color: var(--dolly-muted, #475569); font-size: .875rem; }
+.dp-footer p { margin: 0; padding: 24px 0; }
+
+/* ---------- WordPress classes ---------- */
+.screen-reader-text {
+	border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden;
+	padding: 0; position: absolute !important; width: 1px; word-wrap: normal !important;
+}
+.screen-reader-text:focus, .skip-link:focus {
+	background: var(--dolly-surface, #fff); border-radius: 8px; box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6); clip: auto !important; clip-path: none;
+	color: var(--dolly-text, #0F172A); display: block; font-weight: 700; height: auto; left: 8px; padding: 12px 16px; text-decoration: none; top: 8px; width: auto; z-index: 100000;
+}
+.alignleft { float: left; margin: 0 24px 16px 0; }
+.alignright { float: right; margin: 0 0 16px 24px; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; clear: both; }
+.alignwide { margin-left: -24px; margin-right: -24px; max-width: calc(100% + 48px); }
+.alignfull { margin-left: -25px; margin-right: -25px; max-width: calc(100% + 50px); }
+.wp-caption { max-width: 100%; margin-bottom: 16px; }
+.wp-caption img { display: block; }
+.wp-caption-text, .gallery-caption, figcaption { font-size: .875rem; color: var(--dolly-muted, #475569); margin-top: 6px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; }
+.sticky { border-color: var(--dolly-primary, #2563EB); }
+.bypostauthor > .comment-body .fn::after { content: " ★"; color: var(--dolly-primary, #2563EB); }
+@media (max-width: 600px) {
+	.alignleft, .alignright { float: none; margin: 0 0 16px; }
+	.dp-entry { padding: 16px; }
+	.alignwide, .alignfull { margin-left: -17px; margin-right: -17px; max-width: calc(100% + 34px); }
+}
+
+/* Theme pages inside the plugin's design (plugin active). */
 .dolly-app .dp-content img { max-width: 100%; height: auto; }
 .dolly-app .dp-content > :last-child { margin-bottom: 0; }
 

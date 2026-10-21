@@ -11,9 +11,25 @@ msgstr ""
 "X-Domain: dolly-portal\n"
 "X-Source-Language: en_US\n"
 
-#: functions.php
-msgid "Dolly Portal:"
-msgstr "Dolly Portal:"
+#: comments.php
+msgid "Comments are closed."
+msgstr "I commenti sono chiusi."
+
+#. translators: %s: number of comments.
+#: comments.php
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s commento"
+msgstr[1] "%s commenti"
+
+#. translators: 1: year, 2: site name.
+#: footer.php
+msgid "© %1$s %2$s"
+msgstr "© %1$s %2$s"
+
+#: functions.php header.php
+msgid "Primary menu"
+msgstr "Menu principale"
 
 #. translators: %s: required plugin version.
 #: functions.php
@@ -21,12 +37,70 @@ msgid "this theme needs a newer version of the Dolly Employee Management plugin.
 msgstr "questo tema richiede una versione più recente del plugin Dolly Employee Management. Installa l'ultima versione (%s o successiva)."
 
 #: functions.php
-msgid "install and activate the latest version of the Dolly Employee Management plugin. The theme is only the layout of the portal: sign-in, employee portal and workplace display come from the plugin."
-msgstr "installa e attiva l'ultima versione del plugin Dolly Employee Management. Il tema è solo l'impaginazione del portale: accesso, portale dipendenti e schermo della sede sono del plugin."
+msgid "install and activate the latest version of the Dolly Employee Management plugin to turn this site into an employee portal (sign-in, employee portal and workplace display)."
+msgstr "installa e attiva l'ultima versione del plugin Dolly Employee Management per trasformare questo sito in un portale dipendenti (accesso, portale dipendenti e schermo della sede)."
 
-#: template-parts/plugin-missing.php
+#: functions.php
+msgid "Dolly Portal:"
+msgstr "Dolly Portal:"
+
+#: header.php template-parts/plugin-missing.php
 msgid "Skip to content"
 msgstr "Vai al contenuto"
+
+#. translators: %s: search terms.
+#: index.php
+msgid "Search results for: %s"
+msgstr "Risultati della ricerca: %s"
+
+#. translators: %s: author name.
+#: index.php
+msgid "by %s"
+msgstr "di %s"
+
+#: index.php
+msgid "Featured"
+msgstr "In evidenza"
+
+#: index.php
+msgid "Page"
+msgstr "Pagina"
+
+#: index.php
+msgid "Pages:"
+msgstr "Pagine:"
+
+#: index.php
+msgid "Categories:"
+msgstr "Categorie:"
+
+#: index.php
+msgid "Tags:"
+msgstr "Tag:"
+
+#: index.php
+msgid "Previous"
+msgstr "Precedente"
+
+#: index.php
+msgid "Next"
+msgstr "Successivo"
+
+#: index.php
+msgid "Page not found"
+msgstr "Pagina non trovata"
+
+#: index.php
+msgid "Nothing found"
+msgstr "Nessun contenuto trovato"
+
+#: index.php
+msgid "No results match your search. Try different words."
+msgstr "Nessun risultato per la ricerca. Prova con altre parole."
+
+#: index.php
+msgid "The page you are looking for is not available. Try a search."
+msgstr "La pagina che cerchi non è disponibile. Prova a cercare."
 
 #: template-parts/plugin-missing.php
 msgid "Employee portal unavailable"
@@ -41,8 +115,8 @@ msgid "Administrator:"
 msgstr "Amministratore:"
 
 #: style.css
-msgid "Base theme for an employee portal site built on the Dolly Employee Management plugin. The theme only provides the page layout; content, design, colors, logo, languages and all features come from the plugin."
-msgstr "Tema di base per un sito di portale dipendenti basato sul plugin Dolly Employee Management. Il tema fornisce solo l'impaginazione; contenuti, aspetto, colori, logo, lingue e tutte le funzionalità sono del plugin."
+msgid "A clean one-column theme for a site dedicated to an employee portal. With the Dolly Employee Management plugin it shows the sign-in pages, the employee portal and the workplace display with the plugin's design, colors, logo and languages. Without the plugin it works as a simple, accessible blog and pages theme."
+msgstr "Un tema pulito a una colonna per un sito dedicato a un portale dipendenti. Con il plugin Dolly Employee Management mostra le pagine di accesso, il portale dipendenti e lo schermo della sede con l'aspetto, i colori, il logo e le lingue del plugin. Senza il plugin funziona come un semplice tema accessibile per articoli e pagine."
 
 #: style.css
 msgid "Dolly Portal"

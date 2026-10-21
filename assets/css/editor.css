@@ -1,0 +1,6 @@
+/* Dolly Portal: block editor styles (same reading width and typography as the front end). */
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; font-size: 16px; line-height: 1.5; color: #0F172A; }
+.wp-block { max-width: 712px; }
+.wp-block[data-align="wide"] { max-width: 760px; }
+.wp-block[data-align="full"] { max-width: none; }
+a { color: #2563EB; }

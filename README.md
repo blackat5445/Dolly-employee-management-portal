@@ -14,15 +14,16 @@ The theme provides only the page layout. Everything else comes from the plugin, 
 - **Portal templates:** one template per application view in `dolly/`, all sharing a single layout (`template-parts/app-layout.php`). The plugin renders the content of each view.
 - **Same design everywhere:** the theme's own pages (front page, pages) use the plugin's stylesheet and Appearance settings, through `Dolly_Frontend::enqueue_styles()`.
 - **Browser bar color:** on phones it follows the header color chosen in *Aspetto*.
-- **Private by default:** every page of the site is marked `noindex, nofollow`.
-- **Plugin check:** if the plugin is not installed or not active, visitors see a maintenance page, while administrators see on that page and in wp-admin a message asking to install the latest version of the plugin. If the plugin is older than the version this theme is made for (`DOLLY_PORTAL_PLUGIN_VERSION`, currently 1.12.0), wp-admin shows a message asking to update it.
+- **Works without the plugin:** a simple, accessible blog and pages theme (posts, pages, archives, search, comments, primary menu).
+- **Search engines:** the theme does not change them. With the theme active, the plugin keeps the whole portal site out of search engines (filter `dolly_noindex_site`).
+- **Plugin check:** if the plugin is not installed or not active, or older than the version this theme is made for (`DOLLY_PORTAL_PLUGIN_VERSION`, currently 1.13.0), administrators see a dismissible notice in wp-admin recommending the latest version.
 - **Accessible:** skip link, visible focus states and 44px touch targets.
 
 ## Requirements
 
 - **WordPress 6.2+** with pretty permalinks enabled.
 - **PHP 7.4+.**
-- **[Dolly Employee Management](https://github.com/blackat5445/Dolly-employee-management) 1.12+** installed and active.
+- Optional: **[Dolly Employee Management](https://github.com/blackat5445/Dolly-employee-management) 1.13+** for the employee portal.
 
 ## Installation
 
