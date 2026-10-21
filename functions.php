@@ -12,7 +12,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'DOLLY_PORTAL_VERSION', '1.3.1' );
+define( 'DOLLY_PORTAL_VERSION', '1.4.0' );
 
 /** Oldest version of the Dolly Employee Management plugin this theme is made for. */
 define( 'DOLLY_PORTAL_PLUGIN_VERSION', '1.13.0' );
@@ -32,10 +32,38 @@ function dolly_portal_setup() {
 	add_theme_support( 'align-wide' );
 	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption', 'style', 'script', 'navigation-widgets' ) );
 	add_theme_support( 'editor-styles' );
+	add_theme_support(
+		'custom-logo',
+		array(
+			'height'      => 96,
+			'width'       => 96,
+			'flex-height' => true,
+			'flex-width'  => true,
+		)
+	);
 	add_editor_style( 'assets/css/editor.css' );
 	register_nav_menus( array( 'primary' => __( 'Primary menu', 'dolly-portal' ) ) );
 }
 add_action( 'after_setup_theme', 'dolly_portal_setup' );
+
+/**
+ * Logo in the header of the standard pages: the custom logo (Appearance › Customize › Site Identity) or, by
+ * default, the Dolly logo. Filter dolly_portal_default_logo: false to show only the site title.
+ */
+function dolly_portal_logo() {
+	if ( has_custom_logo() ) {
+		the_custom_logo();
+		return;
+	}
+	if ( ! apply_filters( 'dolly_portal_default_logo', true ) ) {
+		return;
+	}
+	printf(
+		'<a class="dp-logo" href="%1$s" rel="home" aria-hidden="true" tabindex="-1"><img src="%2$s" alt="" width="32" height="26"></a>',
+		esc_url( home_url( '/' ) ),
+		esc_url( get_template_directory_uri() . '/assets/images/dolly-logo.svg' )
+	);
+}
 
 /** True when the application plugin is active (and recent enough to render the portal). */
 function dolly_portal_plugin_active() {

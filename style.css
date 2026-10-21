@@ -4,14 +4,14 @@ Theme URI: https://github.com/blackat5445/Dolly-employee-management-portal
 Author: Kasra Falahati
 Author URI: https://kasra.eu
 Description: A clean one-column theme for a site dedicated to an employee portal. With the Dolly Employee Management plugin it shows the sign-in pages, the employee portal and the workplace display with the plugin's design, colors, logo and languages. Without the plugin it works as a simple, accessible blog and pages theme.
-Version: 1.3.1
+Version: 1.4.0
 Requires at least: 6.2
 Tested up to: 7.1
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: dolly-portal
-Tags: one-column, custom-menu, featured-images, threaded-comments, translation-ready, wide-blocks, blog
+Tags: one-column, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, wide-blocks, blog
 */
 
 /*
@@ -38,6 +38,11 @@ img, video, iframe { max-width: 100%; height: auto; }
 .dp-wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
 .dp-header { background: var(--dolly-header-bg, #2563EB); color: var(--dolly-header-text, #fff); }
 .dp-header__inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding-top: 16px; padding-bottom: 16px; }
+.dp-branding { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.dp-logo { display: grid; place-items: center; flex: none; width: 44px; height: 44px; border-radius: 10px; background: #fff; }
+.dp-logo img { display: block; width: 32px; height: auto; }
+.custom-logo-link { display: block; flex: none; }
+.custom-logo-link img { display: block; max-height: 48px; width: auto; }
 .dp-site-title { margin: 0; font-size: 1.25rem; font-weight: 800; line-height: 1.25; }
 .dp-site-title a { color: inherit; text-decoration: none; }
 .dp-site-description { margin: 2px 0 0; font-size: .875rem; opacity: .85; }
